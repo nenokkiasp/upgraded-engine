@@ -14,7 +14,7 @@ jobs:
           dotnet-version: '6.0.x'
       
       - name: Generate template
-        run: dotnet new webapi {{ctx.current_template['parameters']['DOTNET_API_TYPE']}} -o rest
+        run: dotnet new webapi -o rest
       
 #      - name: Remove initialization workflow
 #        run: rm .github/workflows/init_repository.yml
